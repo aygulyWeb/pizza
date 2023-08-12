@@ -1,2 +1,2 @@
 # pizza
-This is my second layout project with Pixcel Perfect.
+This is my second layout project with Pixel Perfect.
