@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+@import "_header";
+@import "_create";
+@import "_progress";
+@import "_features";
+@import "_footer";
+@import "_variables";
+@import "_extends";
+@import "_mixins";
+
+html,
+body {
+	font-size: 16px;
+	// overflow: hidden;
+}
+:root {
+	font-size: 1em;
+}
+
+.wrapper {
+	width: 100%;
+	background-color: $blockBackcolor;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	// border: 1px solid;
+}
+
+a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}

@@ -1,0 +1,12 @@
+@import "_variables";
+@import "_extends";
+@import "_mixins";
+
+.footer {
+	.footer__copr {
+		@include blockFonts(1.135rem, $menuFont, normal, $footerCoprcolor);
+		@extend %blockTexts;
+		padding-top: 2.777rem;
+		padding-bottom: 3.313rem;
+	}
+}

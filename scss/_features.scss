@@ -1,0 +1,50 @@
+@import "_variables";
+@import "_extends";
+@import "_mixins";
+.features {
+	background-color: $headerTextcolor;
+	display: flex;
+	width: 1170px;
+	height: 403px;
+	box-shadow: 0 0 8px rgb(221, 214, 214);
+	.features-block {
+		padding-left: 3.8rem;
+
+		.features-block__images {
+			display: flex;
+			.number {
+				@include blockFonts(7.9rem, $loremFont, 900, $contentTextcolor);
+				padding-top: 3.2rem;
+			}
+			.icon {
+				padding-top: 5.5rem;
+				padding-right: 4.5rem;
+			}
+
+			.social__icons {
+				padding-top: 0.4rem;
+				padding-left: 1.7rem;
+			}
+		}
+
+		.features-block__text {
+			.title {
+				@include blockFonts(2.813rem, $menuFont, 900, $contentTextcolor);
+				text-transform: uppercase;
+				padding-top: 0.8rem;
+			}
+			.subtitle {
+				@include blockFonts(1.2rem, $loremFont, 700, $contentTextcolor);
+				padding-top: 0.9rem;
+				padding-right: 2.2rem;
+			}
+		}
+	}
+}
+
+.create {
+	@extend %blockFlexcenter;
+	cursor: pointer;
+	padding-top: 4.375rem;
+	padding-bottom: 5.938rem;
+}

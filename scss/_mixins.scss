@@ -1,0 +1,16 @@
+@mixin blockFonts($fontSize, $fontFamily: serif, $fontWeight: normal, $fontColor) {
+	font-size: $fontSize;
+	font-family: $fontFamily;
+	font-weight: $fontWeight;
+	color: $fontColor;
+}
+
+@mixin navigation($content, $width, $height, $border, $position, $top, $left) {
+	content: $content;
+	width: $width;
+	height: $height;
+	border-right: $border;
+	position: $position;
+	top: $top;
+	left: $left;
+}

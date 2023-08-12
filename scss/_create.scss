@@ -1,0 +1,51 @@
+@import "_variables";
+@import "_extends";
+@import "_mixins";
+
+.wrap {
+	background-image: url(../images/background-red.png);
+
+	.content {
+		@extend %blockFlex;
+
+		.content__create {
+			padding-top: 15.5rem;
+			padding-bottom: 17.8rem;
+
+			.text__create {
+				@include blockFonts(3.125rem, $menuFont, bold, $headerTextcolor);
+				text-transform: capitalize;
+			}
+
+			.text__lorem {
+				padding-top: 0.5rem;
+				padding-right: 3rem;
+				letter-spacing: normal;
+				@include blockFonts(1.68rem, $loremFont, normal, $headerTextcolor);
+			}
+
+			.text__button {
+				@include blockFonts(1.3rem, $readmoreFont, bold, $headerTextcolor);
+				@extend %blockTexts;
+				letter-spacing: normal;
+				width: 11.8rem;
+				height: 3.2rem;
+				border: 2px solid;
+				position: relative;
+				margin-top: 1.45rem;
+				padding-top: 0.8rem;
+
+				&:hover {
+					background: rgba(255, 255, 255, 0.3);
+				}
+			}
+			a {
+				display: block;
+			}
+		}
+
+		.content__image {
+			padding-top: 3.29rem;
+		}
+	}
+}

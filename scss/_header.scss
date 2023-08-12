@@ -1,0 +1,61 @@
+@import "_variables";
+@import "_extends";
+@import "_mixins";
+
+.header {
+	@extend %blockFlex;
+
+	.header__logo {
+		display: block;
+		cursor: pointer;
+		padding-top: 2.188rem;
+		padding-bottom: 2.438rem;
+	}
+
+	.header__navigation {
+		display: flex;
+		@include blockFonts(1.063rem, $menuFont, 700, $headerMenucolor);
+		text-transform: uppercase;
+		padding-top: 3.5rem;
+		padding-bottom: 3.374rem;
+
+		.navigation__list {
+			position: relative;
+			padding-left: 2.8rem;
+
+			&:nth-of-type(2):before {
+				content: "";
+				width: 0.2rem;
+				height: 1rem;
+				border-right: 2px solid #000;
+				position: absolute;
+				top: 0.11rem;
+				left: 1.38rem;
+			}
+			&:nth-of-type(3):before {
+				content: "";
+				width: 0.2rem;
+				height: 1rem;
+				border-right: 2px solid #000;
+				position: absolute;
+				top: 0.11rem;
+				left: 1.3rem;
+			}
+			&:nth-of-type(4):before {
+				content: "";
+				width: 0.2rem;
+				height: 1rem;
+				border-right: 2px solid #000;
+				position: absolute;
+				top: 0.11rem;
+				left: 1.25rem;
+			}
+		}
+	}
+	a {
+		color: $headerMenucolor;
+		&:hover {
+			color: $mainColor;
+		}
+	}
+}
